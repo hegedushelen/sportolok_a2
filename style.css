@@ -151,3 +151,37 @@ iframe {
     justify-content: center;
     align-items: center;
 }
+@media all and (max-width:600px) {
+main {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+    "article"
+    "aside"
+    "section"
+    "footer"; 
+}
+section {
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "h3"
+    "div1"
+    "div2"
+    "div3";
+}
+#main2 {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+    "article"
+    "aside"
+    "footer"; 
+}
+}
