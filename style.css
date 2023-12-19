@@ -1,0 +1,153 @@
+body {
+    background: url(hatterkep.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+main {
+    width: 75%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "article article aside"
+    "section section section"
+    "footer footer footer"; 
+    background-color: lightblue;
+    border: 3px black solid;
+    border-radius: 5px;
+    gap: 10px;
+}
+#main2 {
+    width: 75%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "article aside"
+    "footer footer"; 
+    background-color: lightblue;
+    border: 3px black solid;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 5px;
+}
+header>img {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    grid-area: nav;
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 5px;
+}
+#ul1 {
+    list-style: none;
+}
+.li1 {
+    display: inline-block;
+    padding: 2vw;
+}
+a {
+   text-decoration: none; 
+   color: black;
+}
+article {
+    grid-area: article;
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+article>img {
+    width: 50%;
+    float: left;
+}
+#img2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: none;
+}
+aside {
+    grid-area: aside;
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+li {
+    list-style-type: inside;
+    list-style-type: disc;
+}
+section>div>img {
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section>div>p {
+    padding: 10px;
+}
+
+section {
+    grid-area: section;
+    background-color: orange;
+    border: 3px black solid;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "h3 h3 h3"
+    "div1 div2 div3 ";
+}
+h3 {
+    grid-area: h3;
+}
+#div1 {
+    grid-area: div1;
+}
+#div2 {
+    grid-area: div2;
+}
+#div3 {
+    grid-area: div3;
+}
+footer {
+    grid-area: footer;
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+iframe {
+    width: 280px;
+    height: 157px;
+    border: 0px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
